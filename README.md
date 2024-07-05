@@ -1,0 +1,1 @@
+# React-Typescript-Store-Goals-App
