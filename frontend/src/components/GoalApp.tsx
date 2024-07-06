@@ -1,4 +1,9 @@
-export default function GoalApp({ title, description }: { title: string; description: string }) {
+interface GoalAppProps {
+  title: string;
+  description: string;
+};
+
+export default function GoalApp({ title, description }: GoalAppProps) {
   return (
     <article>
       <h1>{title}</h1>
