@@ -1,16 +1,38 @@
-interface GoalAppProps {
-  title: string;
-  description: string;
-};
+import { PropsWithChildren } from 'react'
 
-export default function GoalApp({ title, description }: GoalAppProps) {
+type GoalAppProps = PropsWithChildren<{ title: string}>;
+
+export default function GoalApp({ title, children }: GoalAppProps) {
   return (
     <article>
       <h1>{title}</h1>
-      <p>{description}</p>
+      {children}
       <div>
-        <button>Dellete</button>
+        <button>Delete</button>
       </div>
     </article>
   );
 }
+
+
+
+// Alternative way to import ReactNode:
+
+// import {  type ReactNode } from 'react'
+
+// interface GoalAppProps {
+//   title: string;
+//   children: ReactNode;
+// };
+
+// export default function GoalApp({ title, children }: GoalAppProps) {
+//   return (
+//     <article>
+//       <h1>{title}</h1>
+//       {children}
+//       <div>
+//         <button>Delete</button>
+//       </div>
+//     </article>
+//   );
+// }
