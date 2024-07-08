@@ -1,11 +1,8 @@
 import GoalApp from "./GoalApp";
+import { Goal } from "../App";
 
 type GoalListProps = {
-  goals: {
-    title: string;
-    description: string;
-    id: number;
-  }[];
+  goals: Goal[];
 };
 
 export default function GoalAppList({goals}: GoalListProps) {
