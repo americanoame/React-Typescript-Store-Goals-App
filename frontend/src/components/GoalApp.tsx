@@ -1,14 +1,17 @@
 import { PropsWithChildren } from 'react'
 
-type GoalAppProps = PropsWithChildren<{ title: string}>;
+type GoalAppProps = PropsWithChildren<{ 
+  title: string;
+  onDelete: () => void;
+}>;
 
-export default function GoalApp({ title, children }: GoalAppProps) {
+export default function GoalApp({ title, children, onDelete }: GoalAppProps) {
   return (
     <article>
       <h1>{title}</h1>
       {children}
       <div>
-        <button>Delete</button>
+      <button onClick={onDelete}>Delete</button>
       </div>
     </article>
   );
