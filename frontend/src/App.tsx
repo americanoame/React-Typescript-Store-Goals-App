@@ -27,13 +27,19 @@ export default function App() {
     });
   }
 
+  function deleteGoalHandler(goalId: number) {
+    setGoals((prevGoals) => {
+      return prevGoals.filter(goal => goal.id !== goalId);
+    });
+  }
+
   return (
     <main>
       <Header image={{ src: goalsImg, alt: 'A list of goals' }}>
         <h1>Goals</h1>
       </Header>
       <button onClick={addGoalHandler}>Add Goal</button>
-      <GoalAppList goals={goals} />
+      <GoalAppList goals={goals} onDeleteGoal={deleteGoalHandler} />
     </main>
   );
 }
