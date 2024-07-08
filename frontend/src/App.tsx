@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import GoalApp from './components/GoalApp';
+import GoalAppList from './components/GoalAppList';
 import goalsImg from './assets/goals.jpg';
 import Header from './components/Header';
 
@@ -33,15 +33,7 @@ export default function App() {
         <h1>Goals</h1>
       </Header>
       <button onClick={addGoalHandler}>Add Goal</button>
-      <ul>
-        {goals.map((goal) => (
-          <li key={goal.id}>
-            <GoalApp title={goal.title}>
-              <p>{goal.description}</p>
-            </GoalApp>
-          </li>
-        ))}
-      </ul>
+      <GoalAppList goals={goals} />
     </main>
   );
 }
