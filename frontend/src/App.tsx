@@ -4,7 +4,7 @@ import GoalAppList from './components/GoalAppList';
 import goalsImg from './assets/goals.jpg';
 import Header from './components/Header';
 
-type Goal = {
+ export type Goal = {
   title: string;
   description: string;
   id: number;
