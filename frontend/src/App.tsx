@@ -1,8 +1,10 @@
 import { useState } from 'react';
 
 import GoalAppList from './components/GoalAppList';
-import goalsImg from './assets/goals.jpg';
 import Header from './components/Header';
+import NewGoal from './components/NewGoal';
+import goalsImg from './assets/goals.jpg';
+
 
  export type Goal = {
   title: string;
@@ -38,7 +40,7 @@ export default function App() {
       <Header image={{ src: goalsImg, alt: 'A list of goals' }}>
         <h1>Goals</h1>
       </Header>
-      <button onClick={addGoalHandler}>Add Goal</button>
+      <NewGoal />
       <GoalAppList goals={goals} onDeleteGoal={deleteGoalHandler} />
     </main>
   );
