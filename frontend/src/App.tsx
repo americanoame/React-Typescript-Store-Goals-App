@@ -18,11 +18,11 @@ export default function App() {
   // defines a function addGoalHandler that adds a  
   // new goal to the existing list of goals in the state.
 
-  function addGoalHandler() {
+  function addGoalHandler(goal: string, summary: string) {
     setGoals((prevGoals) => {
       const newGoal: Goal = {
-        title: 'New Goal',
-        description: 'A new goal',
+        title: goal,
+        description: summary,
         id: Math.random(),
       };
       return [...prevGoals, newGoal];
@@ -40,7 +40,7 @@ export default function App() {
       <Header image={{ src: goalsImg, alt: 'A list of goals' }}>
         <h1>Goals</h1>
       </Header>
-      <NewGoal />
+      <NewGoal onAddGoal={addGoalHandler} />
       <GoalAppList goals={goals} onDeleteGoal={deleteGoalHandler} />
     </main>
   );
