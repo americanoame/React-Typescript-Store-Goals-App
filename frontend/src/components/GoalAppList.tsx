@@ -19,10 +19,10 @@ export default function GoalAppList({ goals, onDeleteGoal }: GoalListProps) {
 
   let warningBox: ReactNode;
 
-  if (goals.length >= 3) {
+  if (goals.length >= 4) {
     warningBox = (
-      <InfoBox mode="warning">
-        <p>Wow, that's a lot of goals! Consider removing some.</p>
+      <InfoBox mode="warning" severity="medium">
+        <p>Wow, that's a lot of goals! Consider removing some to stay focused.</p>
       </InfoBox>
     );
   }
