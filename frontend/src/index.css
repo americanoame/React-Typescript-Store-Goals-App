@@ -44,6 +44,8 @@ header h1 {
   color: #f7e596;
 }
 
+
+
 label {
   display: block;
   font-size: 0.85rem;
@@ -95,6 +97,8 @@ li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
+
+
 li article {
   display: flex;
   justify-content: space-between;
@@ -126,6 +130,8 @@ li button:hover {
   color: #f9a73b;
 }
 
+
+
 .infobox {
   margin: 2rem 0;
   padding: 0.5rem;
@@ -154,3 +160,26 @@ li button:hover {
   border: 1px solid #f97373;
   color: #f97373;
 }
+
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article-container h1 {
+  margin: 0; 
+}
+
+.children-container {
+  margin-bottom: 1rem; 
+}
+
+.button-container {
+  margin-left: auto; 
+}
+
+
