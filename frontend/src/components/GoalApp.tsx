@@ -1,23 +1,23 @@
-import { PropsWithChildren } from 'react'
+import { PropsWithChildren } from 'react';
 
-type GoalAppProps = PropsWithChildren<{ 
+type GoalAppProps = PropsWithChildren<{
   title: string;
   onDelete: () => void;
 }>;
 
 export default function GoalApp({ title, children, onDelete }: GoalAppProps) {
   return (
-    <article>
+    <article className='article-container'>
       <h1>{title}</h1>
-      {children}
-      <div>
-      <button onClick={onDelete}>Delete</button>
+      <div className="children-container">
+        {children}
+      </div>
+      <div className="button-container">
+        <button onClick={onDelete}>Delete</button>
       </div>
     </article>
   );
 }
-
-
 
 // Alternative way to import ReactNode:
 
@@ -39,7 +39,6 @@ export default function GoalApp({ title, children, onDelete }: GoalAppProps) {
 //     </article>
 //   );
 // }
-
 
 // Alternative way to import FC:
 
