@@ -2,10 +2,9 @@
 
 <table>
   <tr>
-    <img src="https://github.com/user-attachments/assets/2f7be88b-31f0-48dc-855a-75d6c2dcd7c8">
-    <td>
-    <img src="https://github.com/user-attachments/assets/cff8c423-bee1-4f8a-bff0-a05fb17d9c69">
-    <img src="https://github.com/user-attachments/assets/2a2dcf7a-b16c-46c2-bdb6-6d7c0abfbf31"><td>
+    <td><img src="https://github.com/user-attachments/assets/2f7be88b-31f0-48dc-855a-75d6c2dcd7c8"><td>
+    <td><img src="https://github.com/user-attachments/assets/cff8c423-bee1-4f8a-bff0-a05fb17d9c69"></td>
+   </td><img src="https://github.com/user-attachments/assets/2a2dcf7a-b16c-46c2-bdb6-6d7c0abfbf31"><td>
   </tr>
 </table>
 
@@ -23,12 +22,10 @@ Throughout this course, I've gained valuable experience and skills in building r
 - Created reusable components such as InfoBox for displaying hint and warning messages.
 - Designed NewGoal component with form handling for adding new goals, incorporating React hooks for state management.
 
-
 ##### Styling and Layout:
 
 - Applied CSS techniques for responsive design, including flexbox and grid layouts.
 - Enhanced UI with custom styles and animations to improve user experience.
-
 
 ##### State Management:
 
@@ -42,7 +39,6 @@ Throughout this course, I've gained valuable experience and skills in building r
 - Gained insights into best practices for structuring React applications with TypeScript, ensuring scalability and code maintainability.
 
 This course has equipped me with the skills and knowledge to build modern, efficient web applications confidently. I look forward to applying these principles in future projects and continuing to expand my expertise in frontend development.
-
 
 - Two steps to run the application
 
