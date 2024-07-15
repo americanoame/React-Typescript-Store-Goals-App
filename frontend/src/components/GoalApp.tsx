@@ -1,11 +1,13 @@
-import { PropsWithChildren } from 'react';
+import { PropsWithChildren, type ReactNode } from 'react';
 
 type GoalAppProps = PropsWithChildren<{
   title: string;
   onDelete: () => void;
+  onEdit: () => void;
+  children: ReactNode;
 }>;
 
-export default function GoalApp({ title, children, onDelete }: GoalAppProps) {
+export default function GoalApp({ title, children, onEdit, onDelete }: GoalAppProps) {
   return (
     <article className='article-container'>
       <h1>{title}</h1>
@@ -14,6 +16,7 @@ export default function GoalApp({ title, children, onDelete }: GoalAppProps) {
       </div>
       <div className="button-container">
         <button onClick={onDelete}>Delete</button>
+        <button onClick={onEdit}>Edit</button>
       </div>
     </article>
   );
