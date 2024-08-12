@@ -42,6 +42,9 @@ This course has equipped me with the skills and knowledge to build modern, effic
 
 - Two steps to run the application
 
+#### Deployed link: https://americanoame.github.io/React-Typescript-Store-Goals-App/
+
+
 ```
 npm init -y
 ```
